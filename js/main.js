@@ -897,3 +897,8 @@ document.querySelectorAll('img').forEach(function(img) {
     e.preventDefault();
   }, { passive: false });
 });
+document.querySelectorAll('img').forEach(function(img) {
+  img.addEventListener('touchstart', function(e) {
+    e.preventDefault();
+  }, { passive: false });
+});
