@@ -876,29 +876,3 @@ document.addEventListener('DOMContentLoaded', function () {
   refreshFn()
   unRefreshFn()
 })
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  document.querySelectorAll('img').forEach((img) => {
-    img.addEventListener('click', (event) => {
-      event.preventDefault();
-    });
-  });
-});
-document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
-}, false);
-document.querySelectorAll('img').forEach(function(img) {
-  img.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
-});
-document.querySelectorAll('img').forEach(function(img) {
-  img.addEventListener('dragstart', function(e) {
-    e.preventDefault();
-  }, { passive: false });
-});
-document.querySelectorAll('img').forEach(function(img) {
-  img.addEventListener('touchstart', function(e) {
-    e.preventDefault();
-  }, { passive: false });
-});
